@@ -4,17 +4,15 @@
 <configuration scan="true" scanPeriod="30 seconds">
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>%d{HH:mm:ss} [%-5level] %logger{30}:%line - %msg%n</pattern>
+            <pattern>%d{HH:mm:ss} [%-5level] %logger{40}:%line - %msg%n</pattern>
         </encoder>
     </appender>
 
     <!-- default output method -->
-    <root level="DEBUG">
+    <root level="INFO">
         <appender-ref ref="STDOUT"/>
     </root>
 
     <!-- level configuration -->
-    <logger name="java.io.mina" level="ERROR"/>
-    <logger name="org" level="ERROR"/>
-    <logger name="net" level="ERROR"/>
+    <logger name="com.hyd.salto" level="DEBUG"/>
 </configuration>
