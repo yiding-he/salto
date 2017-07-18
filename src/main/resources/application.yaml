@@ -1,6 +1,10 @@
 server:
-  port: 8090
+  port: 8999
 
 spring:
   redis:
     url: redis://localhost:6379
+  freemarker:
+    request-context-attribute: ctx
+  jackson:
+    default-property-inclusion: non-null
